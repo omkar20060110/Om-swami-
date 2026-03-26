@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: website
-    env: python
-    buildCommand: "pip install -r requirements.txt"
-    startCommand: "gunicorn app:app"
+    name: my-app
+    env: node
+    buildCommand: "cd frontend && npm install && npm run build"
+    startCommand: "cd backend && gunicorn app:app"
