@@ -1,0 +1,107 @@
+.dashboard-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+}
+
+.stat-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 1.5rem;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  border: 1px solid #f1f5f9;
+}
+
+.stat-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 30px -10px rgba(0, 0, 0, 0.1);
+  border-color: #e2e8f0;
+}
+
+.stat-content h4 {
+  margin: 0;
+  color: #64748b;
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.75rem;
+}
+
+.stat-content h2 {
+  margin: 0;
+  color: #1e293b;
+  font-size: 2.5rem;
+  font-weight: 800;
+}
+
+.stat-icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.bg-blue { background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%); }
+.bg-orange { background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%); }
+.bg-green { background: linear-gradient(135deg, #10b981 0%, #059669 100%); }
+.bg-purple { background: linear-gradient(135deg, #8b5cf6 0%, #7c3aed 100%); }
+
+.dashboard-recent {
+  background: white;
+  padding: 2.5rem;
+  border-radius: 2rem;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05);
+  border: 1px solid #f1f5f9;
+}
+
+.recent-section h3 {
+  margin-top: 0;
+  margin-bottom: 2rem;
+  color: #1e293b;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.action-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1.5rem;
+}
+
+.action-btn {
+  background: #f8fafc;
+  color: #475569;
+  border: 1px solid #e2e8f0;
+  padding: 1.25rem;
+  border-radius: 1.25rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+  cursor: pointer;
+}
+
+.action-btn:hover {
+  background: white;
+  color: #6366f1;
+  border-color: #6366f1;
+  transform: translateY(-3px);
+  box-shadow: 0 10px 15px -3px rgba(99, 102, 241, 0.1);
+}
