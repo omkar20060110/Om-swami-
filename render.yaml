@@ -5,10 +5,7 @@ services:
 
     buildCommand: |
       pip install -r backend/requirements.txt
-      cd frontend
-      npm install
-      npm run build
+      cd frontend && npm install && npm run build
 
     startCommand: |
-      cd backend
-      gunicorn app:app
+      cd backend && gunicorn app:app
