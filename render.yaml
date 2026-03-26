@@ -1,11 +1,6 @@
 services:
   - type: web
-    name: export-business-app
+    name: website
     env: python
-    buildCommand: "./build.sh"
-    startCommand: "cd backend && gunicorn app:app"
-    envVars:
-      - key: PYTHON_VERSION
-        value: 3.1x
-    # Automatically deploy changes on push to GitHub
-    autoDeploy: true
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "gunicorn app:app"
